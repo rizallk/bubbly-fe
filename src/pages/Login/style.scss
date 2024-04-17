@@ -1,0 +1,17 @@
+.login {
+  background-color: #eddff8;
+  background-image: url('/images/bg-unsrat.png');
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: lighten;
+  height: 100vh;
+
+  .card {
+    width: 400px;
+    margin-top: 10px;
+
+    @media (min-width: 768px) {
+      margin-top: 60px;
+    }
+  }
+}

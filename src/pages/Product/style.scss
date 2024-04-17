@@ -1,0 +1,62 @@
+.product {
+  .content {
+    margin-top: 82px;
+  }
+
+  .store-info {
+    .store-image {
+      background-color: #f4a4a4;
+      padding: 15px;
+      border-radius: 50%;
+
+      img {
+        width: 32px;
+        height: auto;
+      }
+    }
+
+    @media (min-width: 768px) {
+      box-shadow: var(--bs-box-shadow) !important;
+      border: 0;
+    }
+  }
+
+  .product-detail {
+    .maps {
+      iframe {
+        width: 100%;
+        height: 250px;
+        border: 0;
+
+        @media (min-width: 576px) {
+          width: 400px;
+          height: 300px;
+        }
+      }
+    }
+  }
+
+  .variant-options {
+    top: 75px;
+
+    .jumlah-input {
+      @media (min-width: 576px) {
+        margin: 0 !important;
+      }
+    }
+
+    @media (min-width: 768px) {
+      box-shadow: var(--bs-box-shadow) !important;
+      border: 0;
+    }
+  }
+
+  .seller-profile-modal {
+    .photo {
+      i {
+        font-size: 150px;
+        color: #ad88c6;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id_penjual": "cassie-seller",
+      "nama": "",
+      "angkatan": "",
+      "fakultas": "",
+      "jurusan": "",
+      "prodi": "",
+      "foto": ""
+    },
+    {
+      "id_penjual": "xavier-harahap",
+      "nama": "Xavier Harahap",
+      "angkatan": "2021",
+      "fakultas": "Teknik",
+      "jurusan": "Teknik Elektro",
+      "prodi": "Teknik Informatika",
+      "foto": "viels-image.jpg"
+    }
+  ]
+}

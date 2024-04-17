@@ -1,0 +1,117 @@
+@import '../../assets/scss/variables';
+
+.top-product {
+  .card {
+    transition: 0.2s;
+    box-shadow: none;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--bs-box-shadow) !important;
+    }
+
+    img {
+      object-fit: cover;
+      height: 150px;
+      border-bottom-right-radius: 20px;
+
+      @media (min-width: 576px) {
+        height: 230px;
+      }
+
+      @media (min-width: 768px) {
+        height: 200px;
+      }
+
+      @media (min-width: 992px) {
+        height: 220px;
+      }
+    }
+
+    .card-body {
+      .top {
+        height: 110px;
+
+        .card-title {
+          font-size: 12px;
+
+          @media (min-width: 576px) {
+            font-size: 16px;
+          }
+        }
+
+        .price {
+          font-size: 14px;
+
+          @media (min-width: 576px) {
+            font-size: 16px;
+          }
+        }
+
+        @media (min-width: 576px) {
+          height: 130px;
+        }
+
+        @media (min-width: 768px) {
+          height: 120px;
+        }
+
+        @media (min-width: 992px) {
+          height: 120px;
+        }
+      }
+
+      .bottom {
+        .shop-name {
+          font-size: 12px;
+
+          @media (min-width: 576px) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .slick-slider {
+    margin: 0;
+
+    .slick-next {
+      right: -30px;
+
+      &:before {
+        color: $textColorTheme;
+        font-size: 23px;
+        background-color: white;
+        border-radius: 50%;
+      }
+    }
+
+    .slick-prev {
+      left: -30px;
+
+      &:before {
+        color: $textColorTheme;
+        font-size: 23px;
+        background-color: white;
+        border-radius: 50%;
+      }
+    }
+
+    .slick-dots {
+      transform: translateY(5px);
+
+      li {
+        margin: 0;
+
+        button:before {
+          font-size: 10px;
+        }
+      }
+    }
+
+    @media (min-width: 768px) {
+      margin: 0 30px;
+    }
+  }
+}

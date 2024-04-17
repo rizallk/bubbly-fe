@@ -1,0 +1,27 @@
+.home {
+  position: relative;
+
+  .design-bubble-1 {
+    position: absolute;
+    right: 0;
+    transform: translateX(260px) translateY(-300px);
+    z-index: -1;
+    display: none;
+
+    @media (min-width: 992px) {
+      display: block;
+    }
+  }
+
+  .design-bubble-2 {
+    position: absolute;
+    left: 0;
+    transform: translateX(-260px) translateY(-150px);
+    z-index: -1;
+    display: none;
+
+    @media (min-width: 992px) {
+      display: block;
+    }
+  }
+}

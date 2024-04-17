@@ -1,0 +1,44 @@
+.shop {
+  .content {
+    margin-top: 82px;
+
+    .wallpaper {
+      height: 200px;
+      object-fit: contain;
+      background-color: #eddff8;
+      background-image: url('/images/bg-unsrat.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .shop-profile {
+      .shop-image {
+        img {
+          width: 130px;
+          height: auto;
+        }
+      }
+
+      .right {
+        .btn {
+          width: 130px;
+        }
+      }
+    }
+
+    .seller-profile {
+      .photo {
+        i {
+          font-size: 150px;
+          color: #ad88c6;
+        }
+
+        img {
+          width: 200px;
+          height: auto;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

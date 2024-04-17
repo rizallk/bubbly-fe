@@ -1,0 +1,100 @@
+footer {
+  color: white;
+  position: relative;
+
+  .top {
+    background-color: #a578c2;
+    // background-color: #9b67be;
+
+    .title .b {
+      color: #672e8d;
+
+      @media (min-width: 576px) {
+        font-size: 45px;
+      }
+    }
+
+    .list-group {
+      .list-group-item {
+        background: transparent;
+        color: white;
+        border-color: #f4f6f62a;
+
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    background-color: #7469b6;
+  }
+
+  .social-media {
+    margin-top: 20px;
+
+    a {
+      color: white;
+
+      .bi {
+        font-size: 30px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .design-1 {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    transform: translateY(-60px) translateX(-140px);
+    z-index: -1;
+
+    @media (min-width: 576px) {
+      transform: translateY(-70px) translateX(-90px);
+    }
+  }
+
+  .design-2 {
+    position: absolute;
+    right: 0;
+    width: 350px;
+    height: auto;
+    transform: translateY(-130px) translateX(130px);
+    z-index: -1;
+    display: none;
+
+    @media (min-width: 992px) {
+      display: block;
+    }
+  }
+  // .design-2 {
+  //   position: absolute;
+  //   right: 0;
+  //   width: 400px;
+  //   height: auto;
+  //   transform: translateY(-190px) translateX(130px);
+  //   z-index: -1;
+  //   display: none;
+
+  //   @media (min-width: 992px) {
+  //     display: block;
+  //   }
+  // }
+
+  // .logo-unsrat-grey {
+  //   position: absolute;
+  //   right: 0;
+  //   width: 300px;
+  //   height: auto;
+  //   transform: translateX(115px) translateY(-125px);
+  //   opacity: 0.5;
+  //   display: none;
+  //   // z-index: -1;
+
+  //   @media (min-width: 992px) {
+  //     display: block;
+  //   }
+  // }
+}

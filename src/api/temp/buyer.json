@@ -1,0 +1,12 @@
+{
+  "data": [
+    {
+      "id_buyer": "buyer1",
+      "nama": "John Doe",
+      "no_hp": "081245517656",
+      "alamat": "Bahu, Manado",
+      "username": "johndoe12",
+      "password": "johndoe_12"
+    }
+  ]
+}

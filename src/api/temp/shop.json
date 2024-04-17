@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "id_toko": "cassie-bakery",
+      "slug": "cassie-bakery",
+      "nama": "Cassie Bakery",
+      "google_maps_src": "Tidak ada",
+      "kontak": "081229941540",
+      "alamat": "Wale Manguni",
+      "deskripsi": "",
+      "waktu_buka": "",
+      "waktu_tutup": "",
+      "disukai": 0,
+      "pengikut": 0,
+      "gambar": "",
+      "id_penjual": "cassie-seller"
+    },
+    {
+      "id_toko": "viels-design-studio",
+      "slug": "viels-design-studio",
+      "nama": "Viel's Design Studio",
+      "google_maps_src": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d225.81058233216015!2d124.84462770733869!3d1.4598856295114013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sid!2sid!4v1713069296764!5m2!1sid!2sid",
+      "kontak": "081257425018",
+      "alamat": "Jalan Arnold Mononotu",
+      "deskripsi": "Digital artist Viel menyediakan berbagai jasa desain 2D custom mulai dari desain illustrasi karakter sampai desain logo perusahaan. Pelanggan bisa diskusi harga sesuai dengan tingkat kerincian detil desain yang diminta",
+      "waktu_buka": "",
+      "waktu_tutup": "",
+      "disukai": 0,
+      "pengikut": 0,
+      "gambar": "viels-image.jpg",
+      "id_penjual": "xavier-harahap"
+    }
+  ]
+}

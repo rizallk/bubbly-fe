@@ -1,0 +1,10 @@
+.not-found {
+  .content {
+    margin-top: 82px;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      height: 100vh;
+    }
+  }
+}

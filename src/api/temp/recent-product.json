@@ -1,0 +1,48 @@
+{
+  "data": [
+    {
+      "id_produk": "1",
+      "slug": "dessert-box",
+      "nama": "Dessert Box",
+      "harga": 30000,
+      "deskripsi": "Dessert box adalah sebuah konsep kemasan atau wadah yang berisi beragam jenis makanan penutup atau hidangan manis. Biasanya, dessert box dirancang untuk memberikan pengalaman yang beragam dan memuaskan bagi para pecinta makanan penutup. Isinya bisa beragam, mulai dari kue, cake pops, cookies, pudding, macarons, brownies, hingga buah-buahan yang dipadukan dengan berbagai jenis saus atau krim.",
+      "kategori": "Makanan",
+      "gambar": ["dessert-box-1.png", "dessert-box-2.png", "dessert-box-3.png"],
+      "disukai": 0,
+      "id_penjual": "cassie-seller",
+      "id_toko": "cassie-bakery"
+    },
+    {
+      "id_produk": "2",
+      "slug": "desain-ilustrasi",
+      "nama": "Desain Ilustrasi",
+      "harga": 50000,
+      "deskripsi": "Digital Artist Viel menyediakan jasa desain illustrasi 2D yang memikat dan inovatif untuk memenuhi kebutuhan visual pelanggan dengan kombinasi keahlian seni dan teknologi.",
+      "kategori": "Jasa",
+      "gambar": [
+        "desain-ilustrasi-1.jpg",
+        "desain-ilustrasi-2.png",
+        "desain-ilustrasi-3.png"
+      ],
+      "disukai": 0,
+      "id_penjual": "xavier-harahap",
+      "id_toko": "viels-design-studio"
+    },
+    {
+      "id_produk": "3",
+      "slug": "desain-ilustrasi-2",
+      "nama": "Desain Ilustrasi (2)",
+      "harga": 50000,
+      "deskripsi": "Digital Artist Viel menyediakan jasa desain illustrasi 2D yang memikat dan inovatif untuk memenuhi kebutuhan visual pelanggan dengan kombinasi keahlian seni dan teknologi.",
+      "kategori": "Jasa",
+      "gambar": [
+        "desain-ilustrasi-1.jpg",
+        "desain-ilustrasi-2.png",
+        "desain-ilustrasi-3.png"
+      ],
+      "disukai": 0,
+      "id_penjual": "xavier-harahap",
+      "id_toko": "viels-design-studio"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+.navbar-custom {
+  /* background-color: #ad88c6; */
+  background-color: #ab82c6;
+
+  &.transparant {
+    background-color: #ab82c6dd;
+  }
+
+  .navbar-brand {
+    color: white;
+    font-weight: 700;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+  .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.55);
+  }
+
+  .navbar-collapse {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    @media (min-width: 992px) {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .search-bar {
+    width: 100%;
+    margin: 10px 0;
+
+    input {
+      border-left: 0;
+      border-right: 0;
+
+      // border-top-right-radius: var(--bs-border-radius) !important;
+      // border-bottom-right-radius: var(--bs-border-radius) !important;
+
+      // @media (min-width: 992px) {
+      //   border-radius: 0 !important;
+      // }
+    }
+
+    .input-group-text {
+      background-color: white;
+    }
+
+    @media (min-width: 992px) {
+      width: 400px;
+      margin: 0 20px;
+    }
+  }
+
+  .btn-wrapper {
+    .signup-btn {
+      width: 100%;
+
+      @media (min-width: 992px) {
+        width: auto;
+      }
+    }
+
+    .login-btn {
+      margin-left: 12px;
+      width: 100%;
+    }
+  }
+
+  .dropdown-filter {
+    i {
+      color: #212529;
+    }
+
+    .dropdown-toggle {
+      padding: 0.375rem 0.75rem !important;
+
+      &::after {
+        content: none;
+      }
+    }
+
+    .bi-filter::before {
+      font-size: 20px;
+      transform: translateY(2px);
+    }
+
+    .dropdown-menu {
+      width: 300px;
+      position: absolute;
+    }
+
+    .dropdown-menu[data-bs-popper] {
+      left: auto;
+      right: 0 !important;
+    }
+  }
+
+  .dropdown {
+    .dropdown-item:active {
+      background-color: #ab82c6;
+    }
+  }
+}

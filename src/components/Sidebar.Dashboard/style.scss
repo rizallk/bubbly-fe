@@ -1,0 +1,13 @@
+.sidebar {
+  background-color: #7d3ba9;
+
+  .nav-custom {
+    a {
+      color: white !important;
+
+      &:hover {
+        color: rgb(212, 212, 212) !important;
+      }
+    }
+  }
+}

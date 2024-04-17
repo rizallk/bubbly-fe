@@ -1,0 +1,68 @@
+.dashboard {
+  .cards {
+    .card-custom {
+      color: white;
+      background: rgb(146, 136, 207);
+      background: linear-gradient(
+        45deg,
+        rgba(146, 136, 207, 1) 0%,
+        rgba(202, 170, 223, 1) 100%
+      );
+
+      transition: 0.2s;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      .card-header {
+        padding: 0;
+        background-color: transparent;
+        border: 0;
+      }
+
+      .card-body {
+        padding: 0;
+        width: 200px;
+
+        .total {
+          p {
+            font-size: 45px;
+          }
+        }
+
+        .icon {
+          svg {
+            color: #d7bde2;
+            width: 100px;
+            height: auto;
+          }
+        }
+      }
+
+      .card-footer {
+        padding: 0;
+        background-color: transparent;
+        border: 0;
+
+        a {
+          color: white;
+          text-decoration: underline;
+          transition: 0.2s;
+
+          &:hover {
+            color: darken(white, 10%);
+          }
+        }
+
+        .total-desc small {
+          color: darken(white, 20%);
+        }
+      }
+
+      hr {
+        margin: 0.5rem 0;
+      }
+    }
+  }
+}

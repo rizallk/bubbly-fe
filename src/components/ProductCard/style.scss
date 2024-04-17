@@ -1,0 +1,106 @@
+.product-card {
+  width: 140px;
+  transition: 0.2s;
+  box-shadow: none;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--bs-box-shadow) !important;
+  }
+
+  img {
+    object-fit: cover;
+    height: 150px;
+    border-bottom-right-radius: 20px;
+
+    @media (min-width: 576px) {
+      height: 200px;
+    }
+
+    @media (min-width: 768px) {
+      height: 200px;
+    }
+
+    @media (min-width: 992px) {
+      height: 200px;
+    }
+  }
+
+  .card-body {
+    .top {
+      height: 90px;
+
+      .card-title {
+        font-size: 12px;
+
+        @media (min-width: 576px) {
+          font-size: 16px;
+        }
+      }
+
+      .price {
+        font-size: 14px;
+
+        @media (min-width: 576px) {
+          font-size: 16px;
+        }
+      }
+
+      @media (min-width: 576px) {
+        height: 110px;
+      }
+
+      @media (min-width: 768px) {
+        height: 100px;
+      }
+
+      @media (min-width: 992px) {
+        height: 100px;
+      }
+    }
+
+    .bottom {
+      height: 60px;
+
+      .shop-name {
+        font-size: 12px;
+
+        @media (min-width: 576px) {
+          font-size: 14px;
+        }
+      }
+
+      @media (min-width: 576px) {
+        height: 100%;
+      }
+
+      @media (min-width: 768px) {
+        height: 60px;
+      }
+
+      @media (min-width: 992px) {
+        height: 60px;
+      }
+    }
+  }
+
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    width: 200px;
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    width: 180px;
+  }
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    width: 180px;
+  }
+
+  // X-Large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    width: 180px;
+  }
+}

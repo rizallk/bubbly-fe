@@ -1,0 +1,73 @@
+@import '../../assets/scss/variables';
+
+.category {
+  .slick-slider {
+    margin: 0;
+
+    .slick-next {
+      right: -30px;
+
+      &:before {
+        color: $textColorTheme;
+        font-size: 23px;
+        background-color: white;
+        border-radius: 50%;
+      }
+    }
+
+    .slick-prev {
+      left: -30px;
+
+      &:before {
+        color: $textColorTheme;
+        font-size: 23px;
+        background-color: white;
+        border-radius: 50%;
+      }
+    }
+
+    .slick-dots {
+      transform: translateY(5px);
+
+      li {
+        margin: 0;
+
+        button:before {
+          font-size: 10px;
+        }
+      }
+    }
+
+    @media (min-width: 768px) {
+      margin: 0 30px;
+    }
+  }
+
+  .card {
+    border-bottom: 6px solid #f4a4a4;
+    transition: 0.2s;
+    box-shadow: none;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--bs-box-shadow) !important;
+    }
+
+    img {
+      object-fit: cover;
+      height: 130px;
+
+      @media (min-width: 576px) {
+        height: 230px;
+      }
+
+      @media (min-width: 768px) {
+        height: 200px;
+      }
+
+      @media (min-width: 992px) {
+        height: 175px;
+      }
+    }
+  }
+}
