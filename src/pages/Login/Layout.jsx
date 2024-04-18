@@ -43,11 +43,7 @@ export default function Layout() {
               <div className="mb-3 d-flex justify-content-center flex-wrap">
                 <div className="mb-3">
                   <Link to="/dashboard" className="btn btn-theme">
-                    <img
-                      className="google-logo"
-                      src="/images/google-logo.png"
-                      alt="Google Logo"
-                    />{' '}
+                    <i className="bi bi-envelope me-2"></i>
                     Login with Email Unsrat
                   </Link>
                 </div>

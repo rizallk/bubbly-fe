@@ -17,6 +17,60 @@
       "jurusan": "Teknik Elektro",
       "prodi": "Teknik Informatika",
       "foto": "viels-image.jpg"
+    },
+    {
+      "id_penjual": "freya-tombokan",
+      "nama": "Freya Tombokan",
+      "angkatan": "2021",
+      "fakultas": "MIPA",
+      "jurusan": "Matematika",
+      "prodi": "Matematika",
+      "foto": "freya-profile.jpg"
+    },
+    {
+      "id_penjual": "chintya-araman",
+      "nama": "Chintya Araman",
+      "angkatan": "2021",
+      "fakultas": "MIPA",
+      "jurusan": "Matematika",
+      "prodi": "Matematika",
+      "foto": "chintya-profile.jpg"
+    },
+    {
+      "id_penjual": "rizal-maulana",
+      "nama": "Rizal Maulana",
+      "angkatan": "2021",
+      "fakultas": "Teknik",
+      "jurusan": "Teknik Elektro",
+      "prodi": "Teknik Informatika",
+      "foto": "default-profile.png"
+    },
+    {
+      "id_penjual": "ricard-rungkat",
+      "nama": "Ricard Rungkat",
+      "angkatan": "2021",
+      "fakultas": "Teknik",
+      "jurusan": "Teknik Elektro",
+      "prodi": "Teknik Informatika",
+      "foto": "default-profile.png"
+    },
+    {
+      "id_penjual": "anjelika-mutiara",
+      "nama": "Anjelika Mutiara",
+      "angkatan": "2021",
+      "fakultas": "MIPA",
+      "jurusan": "Matematika",
+      "prodi": "Matematika",
+      "foto": "default-profile.png"
+    },
+    {
+      "id_penjual": "faithful-mandagi",
+      "nama": "Faithful Mandagi",
+      "angkatan": "2021",
+      "fakultas": "Teknik",
+      "jurusan": "Teknik Elektro",
+      "prodi": "Teknik Informatika",
+      "foto": "default-profile.png"
     }
   ]
 }

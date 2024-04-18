@@ -1,6 +1,9 @@
 import Slider from 'react-slick';
 import { node } from 'prop-types';
 import './style.scss';
+import DataProduct from '../../api/temp/product.json';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 export default function TopProductHome() {
   var settings = {
@@ -39,78 +42,96 @@ export default function TopProductHome() {
     ],
   };
 
-  const topProduct = [
-    {
-      title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
-      harga: 'Rp. 106.000',
-      image: 'produk.png',
-    },
-    {
-      title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
-      harga: 'Rp. 106.000',
-      image: 'produk.png',
-    },
-    {
-      title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
-      harga: 'Rp. 106.000',
-      image: 'produk.png',
-    },
-    {
-      title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
-      harga: 'Rp. 106.000',
-      image: 'produk.png',
-    },
-    {
-      title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
-      harga: 'Rp. 106.000',
-      image: 'produk.png',
-    },
-    {
-      title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
-      harga: 'Rp. 106.000',
-      image: 'produk.png',
-    },
-    {
-      title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
-      harga: 'Rp. 106.000',
-      image: 'produk.png',
-    },
-    {
-      title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
-      harga: 'Rp. 106.000',
-      image: 'produk.png',
-    },
-    {
-      title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
-      harga: 'Rp. 106.000',
-      image: 'produk.png',
-    },
-    {
-      title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
-      harga: 'Rp. 106.000',
-      image: 'produk.png',
-    },
-    {
-      title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
-      harga: 'Rp. 106.000',
-      image: 'produk.png',
-    },
-    {
-      title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
-      harga: 'Rp. 106.000',
-      image: 'produk.png',
-    },
-    {
-      title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
-      harga: 'Rp. 106.000',
-      image: 'produk.png',
-    },
-    {
-      title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
-      harga: 'Rp. 106.000',
-      image: 'produk.png',
-    },
-  ];
+  // const topProduct = [
+  //   {
+  //     title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
+  //     harga: 'Rp. 106.000',
+  //     image: 'produk.png',
+  //   },
+  //   {
+  //     title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
+  //     harga: 'Rp. 106.000',
+  //     image: 'produk.png',
+  //   },
+  //   {
+  //     title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
+  //     harga: 'Rp. 106.000',
+  //     image: 'produk.png',
+  //   },
+  //   {
+  //     title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
+  //     harga: 'Rp. 106.000',
+  //     image: 'produk.png',
+  //   },
+  //   {
+  //     title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
+  //     harga: 'Rp. 106.000',
+  //     image: 'produk.png',
+  //   },
+  //   {
+  //     title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
+  //     harga: 'Rp. 106.000',
+  //     image: 'produk.png',
+  //   },
+  //   {
+  //     title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
+  //     harga: 'Rp. 106.000',
+  //     image: 'produk.png',
+  //   },
+  //   {
+  //     title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
+  //     harga: 'Rp. 106.000',
+  //     image: 'produk.png',
+  //   },
+  //   {
+  //     title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
+  //     harga: 'Rp. 106.000',
+  //     image: 'produk.png',
+  //   },
+  //   {
+  //     title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
+  //     harga: 'Rp. 106.000',
+  //     image: 'produk.png',
+  //   },
+  //   {
+  //     title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
+  //     harga: 'Rp. 106.000',
+  //     image: 'produk.png',
+  //   },
+  //   {
+  //     title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
+  //     harga: 'Rp. 106.000',
+  //     image: 'produk.png',
+  //   },
+  //   {
+  //     title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
+  //     harga: 'Rp. 106.000',
+  //     image: 'produk.png',
+  //   },
+  //   {
+  //     title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
+  //     harga: 'Rp. 106.000',
+  //     image: 'produk.png',
+  //   },
+  // ];
+
+  const [topProduct, setTopProduct] = useState([]);
+
+  useEffect(() => {
+    setTopProduct([]);
+
+    DataProduct.data.forEach((product) => {
+      let dataObject = {
+        slug: product.slug,
+        nama: product.nama,
+        harga: product.harga,
+        gambar: product.gambar,
+        namaToko: 'Nama Toko',
+      };
+
+      setTopProduct((prevArray) => [...prevArray, dataObject]);
+    });
+  }, []);
 
   return (
     <div className="top-product pt-3 mb-5">
@@ -118,11 +139,11 @@ export default function TopProductHome() {
         <span className="text-theme">Produk</span> yang paling banyak Disukai
       </h4>
       <Slider className="p-2 border rounded bg-white" {...settings}>
-        {topProduct.map((v, i) => {
+        {topProduct.reverse().map((v, i) => {
           return (
             <a href="" key={i}>
               <div className="card m-2">
-                <img src={`/images/${v.image}`} className="card-img-top" />
+                <img src={`/images/${v.gambar}`} className="card-img-top" />
                 <div className="card-body">
                   <div className="top">
                     <p className="card-title">{v.title}</p>

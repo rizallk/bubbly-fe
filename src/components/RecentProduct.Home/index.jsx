@@ -1,6 +1,10 @@
 import Slider from 'react-slick';
 import { node } from 'prop-types';
 import './style.scss';
+import { useState } from 'react';
+import DataProduct from '../../api/temp/product.json';
+import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function RecentProductHome() {
   var settings = {
@@ -39,78 +43,96 @@ export default function RecentProductHome() {
     ],
   };
 
-  const recentProduct = [
-    {
-      title: 'PAKET Ombre Wardah',
-      harga: 'Rp. 106.000',
-      image: 'produk.png',
-    },
-    {
-      title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
-      harga: 'Rp. 106.000',
-      image: 'produk.png',
-    },
-    {
-      title: 'PAKET Ombre ',
-      harga: 'Rp. 106.000',
-      image: 'produk.png',
-    },
-    {
-      title: 'PAKET Ombre Wardah Glasting Liquid ',
-      harga: 'Rp. 106.000',
-      image: 'produk.png',
-    },
-    {
-      title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
-      harga: 'Rp. 106.000',
-      image: 'produk.png',
-    },
-    {
-      title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
-      harga: 'Rp. 106.000',
-      image: 'produk.png',
-    },
-    {
-      title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
-      harga: 'Rp. 106.000',
-      image: 'produk.png',
-    },
-    {
-      title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
-      harga: 'Rp. 106.000',
-      image: 'produk.png',
-    },
-    {
-      title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
-      harga: 'Rp. 106.000',
-      image: 'produk.png',
-    },
-    {
-      title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
-      harga: 'Rp. 106.000',
-      image: 'produk.png',
-    },
-    {
-      title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
-      harga: 'Rp. 106.000',
-      image: 'produk.png',
-    },
-    {
-      title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
-      harga: 'Rp. 106.000',
-      image: 'produk.png',
-    },
-    {
-      title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
-      harga: 'Rp. 106.000',
-      image: 'produk.png',
-    },
-    {
-      title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
-      harga: 'Rp. 106.000',
-      image: 'produk.png',
-    },
-  ];
+  // const recentProduct = [
+  //   {
+  //     title: 'PAKET Ombre Wardah',
+  //     harga: 'Rp. 106.000',
+  //     image: 'produk.png',
+  //   },
+  //   {
+  //     title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
+  //     harga: 'Rp. 106.000',
+  //     image: 'produk.png',
+  //   },
+  //   {
+  //     title: 'PAKET Ombre ',
+  //     harga: 'Rp. 106.000',
+  //     image: 'produk.png',
+  //   },
+  //   {
+  //     title: 'PAKET Ombre Wardah Glasting Liquid ',
+  //     harga: 'Rp. 106.000',
+  //     image: 'produk.png',
+  //   },
+  //   {
+  //     title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
+  //     harga: 'Rp. 106.000',
+  //     image: 'produk.png',
+  //   },
+  //   {
+  //     title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
+  //     harga: 'Rp. 106.000',
+  //     image: 'produk.png',
+  //   },
+  //   {
+  //     title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
+  //     harga: 'Rp. 106.000',
+  //     image: 'produk.png',
+  //   },
+  //   {
+  //     title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
+  //     harga: 'Rp. 106.000',
+  //     image: 'produk.png',
+  //   },
+  //   {
+  //     title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
+  //     harga: 'Rp. 106.000',
+  //     image: 'produk.png',
+  //   },
+  //   {
+  //     title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
+  //     harga: 'Rp. 106.000',
+  //     image: 'produk.png',
+  //   },
+  //   {
+  //     title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
+  //     harga: 'Rp. 106.000',
+  //     image: 'produk.png',
+  //   },
+  //   {
+  //     title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
+  //     harga: 'Rp. 106.000',
+  //     image: 'produk.png',
+  //   },
+  //   {
+  //     title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
+  //     harga: 'Rp. 106.000',
+  //     image: 'produk.png',
+  //   },
+  //   {
+  //     title: 'PAKET Ombre Wardah Glasting Liquid Lip - MAUVE (02+05)',
+  //     harga: 'Rp. 106.000',
+  //     image: 'produk.png',
+  //   },
+  // ];
+
+  const [recentProduct, setRecentProduct] = useState([]);
+
+  useEffect(() => {
+    setRecentProduct([]);
+
+    DataProduct.data.forEach((product) => {
+      let dataObject = {
+        slug: product.slug,
+        nama: product.nama,
+        harga: product.harga,
+        gambar: product.gambar,
+        namaToko: 'Nama Toko',
+      };
+
+      setRecentProduct((prevArray) => [...prevArray, dataObject]);
+    });
+  }, []);
 
   return (
     <div className="recent-product mb-5">
@@ -121,12 +143,12 @@ export default function RecentProductHome() {
       <Slider className="p-2 border rounded bg-white" {...settings}>
         {recentProduct.map((v, i) => {
           return (
-            <a href="" key={i}>
+            <Link to={`/product/${v.slug}`} key={i}>
               <div className="card m-2">
-                <img src={`/images/${v.image}`} className="card-img-top" />
+                <img src={`/images/${v.gambar}`} className="card-img-top" />
                 <div className="card-body">
                   <div className="top">
-                    <p className="card-title">{v.title}</p>
+                    <p className="card-title">{v.nama}</p>
                     <p className="card-text fw-bold price">{v.harga}</p>
                   </div>
                   <div className="bottom">
@@ -142,7 +164,7 @@ export default function RecentProductHome() {
                   </div>
                 </div>
               </div>
-            </a>
+            </Link>
           );
         })}
       </Slider>
@@ -150,6 +172,6 @@ export default function RecentProductHome() {
   );
 }
 
-RecentProductHome.propTypes = {
-  children: node,
-};
+// RecentProductHome.propTypes = {
+//   children: node,
+// };

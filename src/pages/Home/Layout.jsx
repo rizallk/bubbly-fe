@@ -8,32 +8,58 @@ import Navbar from '../../components/Navbar';
 import RecentProductHome from '../../components/RecentProduct.Home';
 import TopProductHome from '../../components/TopProduct.Home';
 import ShopCard from '../../components/ShopCard';
+import { Link } from 'react-router-dom';
 
 export default function Layout() {
   const kategoriMakanan = [
     {
       title: 'Kue',
       image: 'kue.png',
+      link: '/products/kue',
     },
     {
-      title: 'Kue',
-      image: 'kue.png',
+      title: 'Mie',
+      image: 'mie.png',
+      link: '/products/mie',
     },
     {
-      title: 'Kue',
-      image: 'kue.png',
+      title: 'Ayam',
+      image: 'ayam.png',
+      link: '/products/ayam',
+    },
+  ];
+  const kategoriProduk = [
+    {
+      title: 'Fashion',
+      image: 'fashion.png',
+      link: '/products/fashion',
     },
     {
-      title: 'Kue',
-      image: 'kue.png',
+      title: 'Aksesoris',
+      image: 'aksesoris.png',
+      link: '/products/aksesoris',
     },
     {
-      title: 'Kue',
-      image: 'kue.png',
+      title: 'Skincare',
+      image: 'skincare.png',
+      link: '/products/skincare',
+    },
+  ];
+  const kategoriJasa = [
+    {
+      title: 'Desain',
+      image: 'desain.png',
+      link: '/products/desain',
     },
     {
-      title: 'Kue',
-      image: 'kue.png',
+      title: 'Editing',
+      image: 'editing.jpg',
+      link: '/products/editing',
+    },
+    {
+      title: 'Aplikasi',
+      image: 'aplikasi.jpg',
+      link: '/products/aplikasi',
     },
   ];
 
@@ -96,7 +122,7 @@ export default function Layout() {
             <CategoryHome title="Makanan">
               {kategoriMakanan.map((v, i) => {
                 return (
-                  <a href="#" key={i}>
+                  <Link to={v.link} key={i}>
                     <div className="card m-2">
                       <img
                         src={`/images/${v.image}`}
@@ -109,7 +135,7 @@ export default function Layout() {
                         </h5>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 );
               })}
             </CategoryHome>
@@ -118,9 +144,9 @@ export default function Layout() {
               src="/images/design-bubble-right.png"
             />
             <CategoryHome title="Produk">
-              {kategoriMakanan.map((v, i) => {
+              {kategoriProduk.map((v, i) => {
                 return (
-                  <a href="#" key={i}>
+                  <Link to={v.link} key={i}>
                     <div className="card m-2">
                       <img
                         src={`/images/${v.image}`}
@@ -133,14 +159,14 @@ export default function Layout() {
                         </h5>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 );
               })}
             </CategoryHome>
             <CategoryHome title="Jasa">
-              {kategoriMakanan.map((v, i) => {
+              {kategoriJasa.map((v, i) => {
                 return (
-                  <a href="#" key={i}>
+                  <Link to={v.link} key={i}>
                     <div className="card m-2">
                       <img
                         src={`/images/${v.image}`}
@@ -153,7 +179,7 @@ export default function Layout() {
                         </h5>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 );
               })}
             </CategoryHome>

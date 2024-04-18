@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './style.scss';
 
 export default function Hero() {
@@ -10,12 +11,12 @@ export default function Hero() {
             Platform untuk Mahasiswa Wirausaha UNSRAT
           </p>
           <div className="btn-wrapper mt-3">
-            <a href="#" className="btn btn-outline-theme-2 me-3">
+            <Link to="/login" className="btn btn-outline-theme-2 me-3">
               Get Started
-            </a>
-            <a href="#" className="btn btn-theme">
+            </Link>
+            <Link to="/products" className="btn btn-theme">
               See Products
-            </a>
+            </Link>
           </div>
           <a href="#content">
             <i className="bi bi-arrow-down-circle-fill text-theme"></i>

@@ -164,15 +164,15 @@ export default function Navbar() {
             </form>
           </ul>
           <div className="d-flex justify-content-end btn-wrapper">
-            <a
-              href="signup.html"
+            <Link
+              to="/signup"
               className="btn btn-outline-light-custom signup-btn"
             >
               Signup
-            </a>
-            <a href="login.html" className="btn btn-light login-btn ">
+            </Link>
+            <Link to="/login" className="btn btn-light login-btn">
               Login
-            </a>
+            </Link>
           </div>
         </div>
       </div>
