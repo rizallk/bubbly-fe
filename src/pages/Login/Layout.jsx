@@ -1,6 +1,7 @@
+import { Link } from 'react-router-dom';
 import './style.scss';
 
-export default function Login() {
+export default function Layout() {
   return (
     <div className="login">
       <div className="container-fluid">
@@ -12,7 +13,7 @@ export default function Login() {
               </h2>
             </div>
             <div className="card-body px-0">
-              <div className="mb-3">
+              {/* <div className="mb-3">
                 <label htmlFor="username" className="form-label">
                   Username
                 </label>
@@ -38,9 +39,29 @@ export default function Login() {
                 <a href="dashboard.html" className="btn btn-theme">
                   Masuk
                 </a>
+              </div> */}
+              <div className="mb-3 d-flex justify-content-center flex-wrap">
+                <div className="mb-3">
+                  <Link to="/dashboard" className="btn btn-theme">
+                    <img
+                      className="google-logo"
+                      src="/images/google-logo.png"
+                      alt="Google Logo"
+                    />{' '}
+                    Login with Email Unsrat
+                  </Link>
+                </div>
+                <Link to="/dashboard" className="btn btn-outline-theme-2 mb-3">
+                  <img
+                    className="google-logo"
+                    src="/images/google-logo.png"
+                    alt="Google Logo"
+                  />{' '}
+                  Login with Google
+                </Link>
               </div>
               <p className="text-center pt-4 m-0">
-                Belum punya Akun? <a href="#">Daftar</a>
+                Belum punya Akun? <Link to="/signup">Daftar</Link>
               </p>
             </div>
             <div className="card-footer text-body-secondary bg-white pt-3 text-center">

@@ -3,11 +3,11 @@ import './style.scss';
 
 export default function SidebarDashboard() {
   return (
-    <div className="col-12 col-sm-3 col-xl-2 px-sm-2 px-0 shadow sidebar d-flex sticky-top">
+    <div className="col-12 col-sm-3 col-xl-2 px-sm-2 px-0 shadow sidebar d-flex sticky-top bg-dark">
       <div className="d-flex flex-sm-column flex-row flex-grow-1 align-items-center align-items-sm-start px-3 pt-2 text-white">
         <Link
           to="/"
-          className="d-flex align-items-center pb-sm-3 mb-md-0 me-md-auto text-white text-decoration-none"
+          className="d-flex align-items-center pb-sm-3 mb-md-0 me-md-auto title text-decoration-none"
         >
           <span className="fs-5 fw-bold">
             B<span className="d-none d-sm-inline">ubbly</span>
@@ -24,11 +24,7 @@ export default function SidebarDashboard() {
             </Link>
           </li>
           <li>
-            <Link
-              to="/dashboard"
-              data-bs-toggle="collapse"
-              className="nav-link px-sm-0 px-2"
-            >
+            <Link to="/dashboard" className="nav-link px-sm-0 px-2">
               <i className="fs-5 bi-speedometer2"></i>
               <span className="ms-3 d-none d-sm-inline">Dashboard</span>
             </Link>
@@ -60,11 +56,32 @@ export default function SidebarDashboard() {
               </li>
             </ul>
           </li>
-          <li>
-            <Link to="/dashboard/product/add" className="nav-link px-sm-0 px-2">
+          <li className="dropdown">
+            <a
+              href="#"
+              className="nav-link dropdown-toggle px-sm-0 px-1"
+              id="dropdown"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
               <i className="fs-5 bi-grid"></i>
-              <span className="ms-3 d-none d-sm-inline">Add Product</span>
-            </Link>
+              <span className="ms-3 d-none d-sm-inline">Product</span>
+            </a>
+            <ul
+              className="dropdown-menu dropdown-menu-dark text-small shadow"
+              aria-labelledby="dropdown"
+            >
+              <li>
+                <Link to="/dashboard/products" className="dropdown-item">
+                  Daftar Produk (semua)
+                </Link>
+              </li>
+              <li>
+                <Link to="/dashboard/product/add" className="dropdown-item">
+                  Tambah Produk
+                </Link>
+              </li>
+            </ul>
           </li>
         </ul>
         <div className="dropdown py-sm-4 mt-sm-auto ms-auto ms-sm-0 flex-shrink-1">

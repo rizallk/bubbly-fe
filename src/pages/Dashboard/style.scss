@@ -1,6 +1,11 @@
 .dashboard {
+  width: 100%;
+
   .cards {
+    width: 100%;
+
     .card-custom {
+      width: 100%;
       color: white;
       background: rgb(146, 136, 207);
       background: linear-gradient(
@@ -23,7 +28,6 @@
 
       .card-body {
         padding: 0;
-        width: 200px;
 
         .total {
           p {
@@ -33,7 +37,7 @@
 
         .icon {
           svg {
-            color: #d7bde2;
+            color: #ebcdf8;
             width: 100px;
             height: auto;
           }
@@ -63,6 +67,12 @@
       hr {
         margin: 0.5rem 0;
       }
+    }
+  }
+
+  .dropdown {
+    .dropdown-item:active {
+      background-color: #ab82c6;
     }
   }
 }

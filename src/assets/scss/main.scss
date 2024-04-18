@@ -10,6 +10,14 @@ body {
   overflow-x: hidden;
 }
 
+table {
+  tr {
+    th {
+      text-wrap: nowrap;
+    }
+  }
+}
+
 .text-theme {
   color: $textColorTheme;
 }

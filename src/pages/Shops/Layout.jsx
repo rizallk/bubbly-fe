@@ -5,7 +5,6 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import DataSeller from '../../api/temp/seller.json';
 import DataShop from '../../api/temp/shop.json';
-import ProductCard from '../../components/ProductCard/index.';
 import ShopCard from '../../components/ShopCard';
 
 export default function Layout() {

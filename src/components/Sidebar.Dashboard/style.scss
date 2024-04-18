@@ -1,13 +1,27 @@
 .sidebar {
-  background-color: #7d3ba9;
+  .title {
+    color: #b990d3;
+  }
 
   .nav-custom {
     a {
-      color: white !important;
+      color: white;
 
       &:hover {
         color: rgb(212, 212, 212) !important;
       }
+    }
+
+    .dropdown {
+      .dropdown-item:active {
+        background-color: #ab82c6 !important;
+      }
+    }
+  }
+
+  .dropdown {
+    .dropdown-item:active {
+      background-color: #ab82c6 !important;
     }
   }
 }
