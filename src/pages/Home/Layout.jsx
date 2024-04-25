@@ -9,6 +9,9 @@ import RecentProductHome from '../../components/RecentProduct.Home';
 import TopProductHome from '../../components/TopProduct.Home';
 import ShopCard from '../../components/ShopCard';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import DataShop from '../../api/temp/shop.json';
 
 export default function Layout() {
   const kategoriMakanan = [
@@ -63,48 +66,72 @@ export default function Layout() {
     },
   ];
 
-  const toko = [
-    {
-      title: 'Nama Toko',
-      desc: 'Deskripsi singkat Toko',
-      image: 'shop-image-color.png',
-      owner: 'Xavier Harahap',
-      address: 'Wanea, Manado',
-      shopLink: '#',
-    },
-    {
-      title: 'Nama Toko',
-      desc: 'Deskripsi singkat Toko',
-      image: 'shop-image-color.png',
-      owner: 'Xavier Harahap',
-      address: 'Wanea, Manado',
-      shopLink: '#',
-    },
-    {
-      title: 'Nama Toko',
-      desc: 'Deskripsi singkat Toko',
-      image: 'shop-image-color.png',
-      owner: 'Xavier Harahap',
-      address: 'Wanea, Manado',
-      shopLink: '#',
-    },
-    {
-      title: 'Nama Toko',
-      desc: 'Deskripsi singkat Toko',
-      image: 'shop-image-color.png',
-      owner: 'Xavier Harahap',
-      address: 'Wanea, Manado',
-      shopLink: '#',
-    },
-    {
-      title: 'Nama Toko',
-      desc: 'Deskripsi singkat Toko',
-      image: 'shop-image-color.png',
-      owner: 'Xavier Harahap',
-      address: 'Wanea, Manado',
-      shopLink: '#',
-    },
-  ];
+  // const toko = [
+  //   {
+  //     title: 'Nama Toko',
+  //     desc: 'Deskripsi singkat Toko',
+  //     image: 'shop-image-color.png',
+  //     owner: 'Xavier Harahap',
+  //     address: 'Wanea, Manado',
+  //     shopLink: '#',
+  //   },
+  //   {
+  //     title: 'Nama Toko',
+  //     desc: 'Deskripsi singkat Toko',
+  //     image: 'shop-image-color.png',
+  //     owner: 'Xavier Harahap',
+  //     address: 'Wanea, Manado',
+  //     shopLink: '#',
+  //   },
+  //   {
+  //     title: 'Nama Toko',
+  //     desc: 'Deskripsi singkat Toko',
+  //     image: 'shop-image-color.png',
+  //     owner: 'Xavier Harahap',
+  //     address: 'Wanea, Manado',
+  //     shopLink: '#',
+  //   },
+  //   {
+  //     title: 'Nama Toko',
+  //     desc: 'Deskripsi singkat Toko',
+  //     image: 'shop-image-color.png',
+  //     owner: 'Xavier Harahap',
+  //     address: 'Wanea, Manado',
+  //     shopLink: '#',
+  //   },
+  //   {
+  //     title: 'Nama Toko',
+  //     desc: 'Deskripsi singkat Toko',
+  //     image: 'shop-image-color.png',
+  //     owner: 'Xavier Harahap',
+  //     address: 'Wanea, Manado',
+  //     shopLink: '#',
+  //   },
+  // ];
+
+  const [toko, setToko] = useState([]);
+
+  useEffect(() => {
+    setToko([]);
+
+    DataShop.data.forEach((shop) => {
+      let dataObject = {
+        slug: shop.slug,
+        nama: shop.nama,
+        maps: shop.google_maps_src,
+        kontak: shop.kontak,
+        alamat: shop.alamat,
+        desc: shop.deskripsi,
+        waktuBuka: shop.waktu_buka,
+        waktuTutup: shop.waktu_tutup,
+        disukai: shop.disukai,
+        pengikut: shop.pengikut,
+        gambar: shop.gambar,
+      };
+
+      setToko((prevArray) => [...prevArray, dataObject]);
+    });
+  }, []);
 
   return (
     <div className="home">
@@ -194,11 +221,12 @@ export default function Layout() {
                 return (
                   <ShopCard
                     key={i}
-                    title={v.title}
+                    title={v.nama}
                     desc={v.desc}
-                    owner={v.owner}
-                    address={v.address}
-                    slug={v.shopLink}
+                    owner="Nama Pemilik"
+                    address={v.alamat}
+                    slug={v.slug}
+                    image={v.gambar}
                     isHome={true}
                   />
                 );

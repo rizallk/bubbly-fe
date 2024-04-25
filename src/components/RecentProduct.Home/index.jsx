@@ -1,10 +1,10 @@
 import Slider from 'react-slick';
-import { node } from 'prop-types';
 import './style.scss';
 import { useState } from 'react';
 import DataProduct from '../../api/temp/product.json';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { rupiahFormat } from '../../utils/rupiahFormat';
 
 export default function RecentProductHome() {
   var settings = {
@@ -145,11 +145,14 @@ export default function RecentProductHome() {
           return (
             <Link to={`/product/${v.slug}`} key={i}>
               <div className="card m-2">
-                <img src={`/images/${v.gambar}`} className="card-img-top" />
+                {v.ga}
+                <img src={`/images/${v.gambar[0]}`} className="card-img-top" />
                 <div className="card-body">
                   <div className="top">
                     <p className="card-title">{v.nama}</p>
-                    <p className="card-text fw-bold price">{v.harga}</p>
+                    <p className="card-text fw-bold price">
+                      {rupiahFormat(v.harga)}
+                    </p>
                   </div>
                   <div className="bottom">
                     <hr />

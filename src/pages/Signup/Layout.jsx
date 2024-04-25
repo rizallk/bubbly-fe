@@ -72,7 +72,7 @@ export default function Layout() {
                       src="/images/google-logo.png"
                       alt="Google Logo"
                     />{' '}
-                    Signin with Google
+                    Signup with Google
                   </Link>
                 </div>
               )}

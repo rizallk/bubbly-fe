@@ -6,7 +6,7 @@
       "nama": "Dessert Box",
       "harga": 30000,
       "deskripsi": "Dessert box adalah sebuah konsep kemasan atau wadah yang berisi beragam jenis makanan penutup atau hidangan manis. Biasanya, dessert box dirancang untuk memberikan pengalaman yang beragam dan memuaskan bagi para pecinta makanan penutup. Isinya bisa beragam, mulai dari kue, cake pops, cookies, pudding, macarons, brownies, hingga buah-buahan yang dipadukan dengan berbagai jenis saus atau krim.",
-      "kategori": "Makanan",
+      "kategori": "Kue",
       "gambar": ["dessert-box-1.png", "dessert-box-2.png", "dessert-box-3.png"],
       "disukai": 0,
       "id_penjual": "cassie-seller",
@@ -18,7 +18,7 @@
       "nama": "Desain Ilustrasi",
       "harga": 50000,
       "deskripsi": "Digital Artist Viel menyediakan jasa desain illustrasi 2D yang memikat dan inovatif untuk memenuhi kebutuhan visual pelanggan dengan kombinasi keahlian seni dan teknologi.",
-      "kategori": "Jasa",
+      "kategori": "Desain",
       "gambar": [
         "desain-ilustrasi-1.jpg",
         "desain-ilustrasi-2.png",
@@ -34,7 +34,7 @@
       "nama": "Desain Ilustrasi (2)",
       "harga": 50000,
       "deskripsi": "Digital Artist Viel menyediakan jasa desain illustrasi 2D yang memikat dan inovatif untuk memenuhi kebutuhan visual pelanggan dengan kombinasi keahlian seni dan teknologi.",
-      "kategori": "Jasa",
+      "kategori": "Desain",
       "gambar": [
         "desain-ilustrasi-1.jpg",
         "desain-ilustrasi-2.png",
@@ -50,7 +50,7 @@
       "nama": "Cake",
       "harga": 450000,
       "deskripsi": "Every cake have a different story, just like memories❤️",
-      "kategori": "Makanan",
+      "kategori": "Kue",
       "gambar": [
         "freya-product1a.png",
         "chintya-product1b.png",
@@ -66,8 +66,12 @@
       "nama": "Brownies",
       "harga": 120000,
       "deskripsi": "Every cake have a different story, just like memories❤️.",
-      "kategori": "Makanan",
-      "gambar": ["freya-product2.jpg"],
+      "kategori": "Kue",
+      "gambar": [
+        "freya-product2.jpg",
+        "freya-product2.jpg",
+        "freya-product2.jpg"
+      ],
       "disukai": 78,
       "id_penjual": "freya-tombokan",
       "id_toko": "syellys-cake-and-bakery"
@@ -78,8 +82,12 @@
       "nama": "Gabin Fla Susu",
       "harga": 2000,
       "deskripsi": "Menyediakan kue yang sederhana namun enak saat dimakan.",
-      "kategori": "Makanan",
-      "gambar": ["chintya-product.png"],
+      "kategori": "Kue",
+      "gambar": [
+        "chintya-product.png",
+        "chintya-product.png",
+        "chintya-product.png"
+      ],
       "disukai": 45,
       "id_penjual": "chintya-araman",
       "id_toko": "kue-chintya"
@@ -90,8 +98,8 @@
       "nama": "Mie Goblin",
       "harga": 18000,
       "deskripsi": "Mie Jebew Pedas.",
-      "kategori": "Makanan",
-      "gambar": ["mie-goblin.png"],
+      "kategori": "Mie",
+      "gambar": ["mie-goblin.png", "mie-goblin.png", "mie-goblin.png"],
       "disukai": 330,
       "id_penjual": "rizal-maulana",
       "id_toko": "mie-jebeww"
@@ -102,8 +110,8 @@
       "nama": "Mie Vasor",
       "harga": 18000,
       "deskripsi": "Rasa yang kaya dan lezat tanpa dominasi rasa pedas atau manis yang kuat.",
-      "kategori": "Makanan",
-      "gambar": ["mie-savor.png"],
+      "kategori": "Mie",
+      "gambar": ["mie-savor.png", "mie-savor.png", "mie-savor.png"],
       "disukai": 289,
       "id_penjual": "rizal-maulana",
       "id_toko": "mie-jebeww"
@@ -114,8 +122,12 @@
       "nama": "Mie fiery Sweet Blaze",
       "harga": 20000,
       "deskripsi": "Kombinasi yang menggugah selera antara rasa pedas yang membara dan manis yang memikat dalam hidangan mie.",
-      "kategori": "Makanan",
-      "gambar": ["mie-fiery-sweet-blaze.png"],
+      "kategori": "Mie",
+      "gambar": [
+        "mie-fiery-sweet-blaze.png",
+        "mie-fiery-sweet-blaze.png",
+        "mie-fiery-sweet-blaze.png"
+      ],
       "disukai": 235,
       "id_penjual": "rizal-maulana",
       "id_toko": "mie-jebeww"
@@ -126,8 +138,8 @@
       "nama": "Ayam Crispy",
       "harga": 12000,
       "deskripsi": "Ayam dengan tepung yang renyah.",
-      "kategori": "Makanan",
-      "gambar": ["ayam-crispy.png"],
+      "kategori": "Ayam",
+      "gambar": ["ayam-crispy.png", "ayam-crispy.png", "ayam-crispy.png"],
       "disukai": 211,
       "id_penjual": "ricard-rungkat",
       "id_toko": "warung-ayam-gurih"
@@ -138,8 +150,12 @@
       "nama": "Ayam Pedas Manis + Nasi ",
       "harga": 22000,
       "deskripsi": "Ayam dengan tepung yang renyah dengan Nasi Hangat.",
-      "kategori": "Makanan",
-      "gambar": ["ayam-pedasmanis-nasi.png"],
+      "kategori": "Ayam",
+      "gambar": [
+        "ayam-pedasmanis-nasi.png",
+        "ayam-pedasmanis-nasi.png",
+        "ayam-pedasmanis-nasi.png"
+      ],
       "disukai": 298,
       "id_penjual": "ricard-rungkat",
       "id_toko": "warung-ayam-gurih"
@@ -150,8 +166,8 @@
       "nama": "Ayam Bakar",
       "harga": 18000,
       "deskripsi": "Ayam bakar pedas manis.",
-      "kategori": "Makanan",
-      "gambar": ["ayam-bakar.png"],
+      "kategori": "Ayam",
+      "gambar": ["ayam-bakar.png", "ayam-bakar.png", "ayam-bakar.png"],
       "disukai": 193,
       "id_penjual": "ricard-rungkat",
       "id_toko": "warung-ayam-gurih"
@@ -163,7 +179,7 @@
       "harga": 180000,
       "deskripsi": "Dress mini dengan sentuhan korea yang penuh dengan motif bunga dan detail ruffle yang feminin.",
       "kategori": "Fashion",
-      "gambar": ["mini-dress.png"],
+      "gambar": ["mini-dress.png", "mini-dress.png", "mini-dress.png"],
       "disukai": 93,
       "id_penjual": "anjelika-mutiara",
       "id_toko": "anjel-fashion"
@@ -175,7 +191,7 @@
       "harga": 210000,
       "deskripsi": "Long Dress dengan sentuhan korea yang penuh dengan motif bunga dan detail ruffle yang feminin.",
       "kategori": "Fashion",
-      "gambar": ["long-dress.png"],
+      "gambar": ["long-dress.png", "long-dress.png", "long-dress.png"],
       "disukai": 89,
       "id_penjual": "anjelika-mutiara",
       "id_toko": "anjel-fashion"
@@ -187,7 +203,7 @@
       "harga": 300000,
       "deskripsi": "Sepatu Boots Korean yang membentuk indah kaki.",
       "kategori": "Fashion",
-      "gambar": ["boots.png"],
+      "gambar": ["boots.png", "boots.png", "boots.png"],
       "disukai": 70,
       "id_penjual": "anjelika-mutiara",
       "id_toko": "anjel-fashion"
@@ -199,7 +215,7 @@
       "harga": 28000,
       "deskripsi": "Gelang Persabahatan.",
       "kategori": "Aksesoris",
-      "gambar": ["gelang-couple.jpg"],
+      "gambar": ["gelang-couple.jpg", "gelang-couple.jpg", "gelang-couple.jpg"],
       "disukai": 346,
       "id_penjual": "faithful-mandagi",
       "id_toko": "faithaks"
@@ -211,7 +227,7 @@
       "harga": 30000,
       "deskripsi": "Kalung Persabahatan.",
       "kategori": "Aksesoris",
-      "gambar": ["kalung-couple.jpg"],
+      "gambar": ["kalung-couple.jpg", "kalung-couple.jpg", "kalung-couple.jpg"],
       "disukai": 268,
       "id_penjual": "faithful-mandagi",
       "id_toko": "faithaks"
@@ -223,7 +239,7 @@
       "harga": 40000,
       "deskripsi": "Cincin Persabahatan.",
       "kategori": "Aksesoris",
-      "gambar": ["cincin-couple.jpg"],
+      "gambar": ["cincin-couple.jpg", "cincin-couple.jpg", "cincin-couple.jpg"],
       "disukai": 191,
       "id_penjual": "faithful-mandagi",
       "id_toko": "faithaks"
@@ -235,7 +251,7 @@
       "harga": 100000,
       "deskripsi": "Viel menyediakan jasa video-editing bagi yang perlu jasa editing untuk video mereka.",
       "kategori": "Jasa",
-      "gambar": ["video-editing.png"],
+      "gambar": ["video-editing.png", "video-editing.png", "video-editing.png"],
       "disukai": 0,
       "id_penjual": "xavier-harahap",
       "id_toko": "viels-multimedia-services"
@@ -247,7 +263,7 @@
       "harga": 50000,
       "deskripsi": "Viel menyediakan jasa desain poster bagi yang perlu desain poster.",
       "kategori": "Jasa",
-      "gambar": ["poster-design.png"],
+      "gambar": ["poster-design.png", "poster-design.png", "poster-design.png"],
       "disukai": 0,
       "id_penjual": "xavier-harahap",
       "id_toko": "viels-multimedia-services"
@@ -259,7 +275,11 @@
       "harga": 50000,
       "deskripsi": "Viel menyediakan jasa desain youtube thumbnail juga bagi para YouTuber.",
       "kategori": "Jasa",
-      "gambar": ["youtube-thumbnail.jpeg"],
+      "gambar": [
+        "youtube-thumbnail.jpeg",
+        "youtube-thumbnail.jpeg",
+        "youtube-thumbnail.jpeg"
+      ],
       "disukai": 0,
       "id_penjual": "xavier-harahap",
       "id_toko": "viels-multimedia-services"
@@ -271,7 +291,11 @@
       "harga": 140000,
       "deskripsi": "",
       "kategori": "Produk",
-      "gambar": ["pregnancy-skincare.jpeg"],
+      "gambar": [
+        "pregnancy-skincare.jpeg",
+        "pregnancy-skincare.jpeg",
+        "pregnancy-skincare.jpeg"
+      ],
       "disukai": 0,
       "id_penjual": "dina-wowor",
       "id_toko": "beauty-glow-skincare"
@@ -283,7 +307,11 @@
       "harga": 210000,
       "deskripsi": "Krim yang memenuhi 90% kebutuhan skincare anda!",
       "kategori": "Produk",
-      "gambar": ["all-in-one-skincare.png"],
+      "gambar": [
+        "all-in-one-skincare.png",
+        "all-in-one-skincare.png",
+        "all-in-one-skincare.png"
+      ],
       "disukai": 0,
       "id_penjual": "dina-wowor",
       "id_toko": "beauty-glow-skincare"
@@ -295,7 +323,11 @@
       "harga": 170000,
       "deskripsi": "Krim anti-tua agar kulit polos dan mudah.",
       "kategori": "Produk",
-      "gambar": ["anti-aging-cream.jpg"],
+      "gambar": [
+        "anti-aging-cream.jpg",
+        "anti-aging-cream.jpg",
+        "anti-aging-cream.jpg"
+      ],
       "disukai": 0,
       "id_penjual": "beauty-glow-skincare",
       "id_toko": "beauty-glow-skincare"

@@ -62,18 +62,18 @@ export default function Navbar() {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <Link to="/products/makanan" className="dropdown-item">
-                    Makanan
+                  <Link to="/products/kue" className="dropdown-item">
+                    Fashion
                   </Link>
                 </li>
                 <li>
-                  <Link to="/products/produk" className="dropdown-item">
-                    Produk
+                  <Link to="/products/mie" className="dropdown-item">
+                    Mie
                   </Link>
                 </li>
                 <li>
-                  <Link to="/products/jasa" className="dropdown-item">
-                    Jasa
+                  <Link to="/products/fashion" className="dropdown-item">
+                    Fashion
                   </Link>
                 </li>
               </ul>

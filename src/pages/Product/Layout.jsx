@@ -386,7 +386,11 @@ export default function Layout() {
             </div>
             <div className="modal-body">
               {dataSeller.foto ? (
-                <img src={`/images/${dataSeller.foto}`} alt="Foto Penjual" />
+                <img
+                  className="img-fluid p-5"
+                  src={`/images/${dataSeller.foto}`}
+                  alt="Foto Penjual"
+                />
               ) : (
                 <div className="photo text-center">
                   <i className="bi bi-person-circle"></i>

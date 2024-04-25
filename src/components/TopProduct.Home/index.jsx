@@ -4,6 +4,8 @@ import './style.scss';
 import DataProduct from '../../api/temp/product.json';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { rupiahFormat } from '../../utils/rupiahFormat';
+import { Link } from 'react-router-dom';
 
 export default function TopProductHome() {
   var settings = {
@@ -141,13 +143,15 @@ export default function TopProductHome() {
       <Slider className="p-2 border rounded bg-white" {...settings}>
         {topProduct.reverse().map((v, i) => {
           return (
-            <a href="" key={i}>
+            <Link to={`/product/${v.slug}`} key={i}>
               <div className="card m-2">
-                <img src={`/images/${v.gambar}`} className="card-img-top" />
+                <img src={`/images/${v.gambar[0]}`} className="card-img-top" />
                 <div className="card-body">
                   <div className="top">
-                    <p className="card-title">{v.title}</p>
-                    <p className="card-text fw-bold price">{v.harga}</p>
+                    <p className="card-title">{v.nama}</p>
+                    <p className="card-text fw-bold price">
+                      {rupiahFormat(v.harga)}
+                    </p>
                   </div>
                   <div className="bottom">
                     <hr />
@@ -162,7 +166,7 @@ export default function TopProductHome() {
                   </div>
                 </div>
               </div>
-            </a>
+            </Link>
           );
         })}
       </Slider>

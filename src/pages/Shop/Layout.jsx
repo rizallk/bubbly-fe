@@ -102,7 +102,7 @@ export default function Shop() {
         <div className="header rounded shadow">
           <img
             className="wallpaper img-fluid rounded-top w-100"
-            src="/images/slide.png"
+            src={`/images/${dataShop.gambar}`}
           />
           <div className="shop-profile rounded-bottom p-3 bg-white">
             <div className="row">
