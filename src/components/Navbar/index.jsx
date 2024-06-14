@@ -63,7 +63,7 @@ export default function Navbar() {
               <ul className="dropdown-menu">
                 <li>
                   <Link to="/products/kue" className="dropdown-item">
-                    Fashion
+                    Kue
                   </Link>
                 </li>
                 <li>
