@@ -130,6 +130,12 @@ export default function Layout() {
     });
   }, []);
 
+  const text = `Halo, saya ingin memesan ${
+    dataProduct.nama
+  }%0a%0aRincian :%0aJumlah Pesanan : ${jumlah}%0aOpsi Pengiriman : ${opsiPengiriman}%0aMetode Pembayaran : ${metodePembayaran}%0aCatatan : ${catatan}%0a%0aTotal Harga : ${rupiahFormat(
+    totalHarga
+  )}`;
+
   return (
     <div className="product">
       <Navbar />
@@ -212,14 +218,13 @@ export default function Layout() {
                         >
                           Lihat Toko
                         </Link>
-                        <a
-                          href="cassie-bakery.html"
+                        <button
                           className="btn btn-theme w-100"
                           data-bs-toggle="modal"
                           data-bs-target="#sellerProfileModal"
                         >
                           Profil Penjual
-                        </a>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -437,14 +442,19 @@ export default function Layout() {
               ></button>
             </div>
             <div className="modal-body">
-              <p>Nama Produk :</p>
+              <p>Nama Produk : {dataProduct.nama}</p>
               <p>Jumlah Pesanan : {jumlah}</p>
-              <p>Nama Pembeli :</p>
-              <p>Kontak Pembeli :</p>
+              {/* <p className="mb-1">Nama Pembeli : </p>
+              <input
+                type="text"
+                className="form-control mb-3"
+                placeholder="Masukkan Nama Anda (Pembeli)"
+              /> */}
+              {/* <p>Kontak Pembeli :</p> */}
               <p>Opsi Pengiriman : {opsiPengiriman}</p>
-              {opsiPengiriman == 'Antar ke Alamat' ? (
+              {/* {opsiPengiriman == 'Antar ke Alamat' ? (
                 <p>Alamat Pembeli : </p>
-              ) : null}
+              ) : null} */}
               <p>Metode Pembayaran : {metodePembayaran}</p>
               <p>Catatan : {catatan ? catatan : 'Tidak ada'}</p>
               <hr />
@@ -453,9 +463,15 @@ export default function Layout() {
               </p>
             </div>
             <div className="modal-footer">
-              <button type="button" className="btn btn-theme">
+              {/* <button type="button" className="btn btn-theme">
                 Konfirmasi
-              </button>
+              </button> */}
+              <a
+                className="btn btn-theme"
+                href={`https://wa.me/+62${dataShop.kontak}?text=${text}`}
+              >
+                Konfirmasi
+              </a>
               <button
                 type="button"
                 className="btn btn-secondary"

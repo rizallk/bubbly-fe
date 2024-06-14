@@ -105,39 +105,31 @@ export default function Shop() {
             src={`/images/${dataShop.gambar}`}
           />
           <div className="shop-profile rounded-bottom p-3 bg-white">
-            <div className="row">
-              <div className="col-md-8">
-                <div className="shop-info-left d-flex align-items-center">
-                  <div className="left">
-                    <div className="shop-image">
-                      <img
-                        className="p-2 border rounded"
-                        src={`/images/${
-                          dataShop.gambar
-                            ? dataShop.gambar
-                            : 'shop-image-color.png'
-                        }`}
-                      />
-                    </div>
-                  </div>
-                  <div className="right ms-3 w-100">
-                    <h5 className="fw-semibold">{dataShop.nama}</h5>
-                    <p>{dataShop.alamat}</p>
-                    <div className="d-flex flex-wrap">
-                      <a href="#" className="btn btn-theme me-2 mb-2">
-                        Ikuti
-                      </a>
-                      <a href="#" className="btn btn-outline-theme me-2 mb-2">
-                        Chat Penjual
-                      </a>
-                      <a href="#" className="btn btn-outline-danger mb-2">
-                        <i className="bi bi-heart"></i> Sukai
-                      </a>
-                    </div>
-                  </div>
+            {/* <div className="row"> */}
+            {/* <div className="col-md-8"> */}
+            <div className="shop-info-left d-flex align-items-center">
+              <div className="left">
+                <div className="shop-image">
+                  <img
+                    className="p-2 border rounded"
+                    src={`/images/${
+                      dataShop.gambar ? dataShop.gambar : 'shop-image-color.png'
+                    }`}
+                  />
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="right ms-3 w-100">
+                <h5 className="fw-semibold">{dataShop.nama}</h5>
+                <p>{dataShop.alamat}</p>
+                <div className="d-flex flex-wrap">
+                  <a href="#" className="btn btn-outline-theme me-2 mb-2">
+                    Chat Penjual
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* </div> */}
+            {/* <div className="col-md-4">
                 <div className="d-flex justify-content-end align-items-center h-100 shop-info-right">
                   <div className=" me-4">
                     <div className="like d-flex h-100 align-items-center">
@@ -162,8 +154,8 @@ export default function Shop() {
                     </p>
                   </div>
                 </div>
-              </div>
-            </div>
+              </div> */}
+            {/* </div> */}
           </div>
         </div>
         <div className="body mt-4 rounded p-3 shadow bg-white">

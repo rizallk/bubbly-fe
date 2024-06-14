@@ -100,7 +100,7 @@ export default function Navbar() {
                 </span>
                 <input
                   type="text"
-                  className="form-control dropdown-toggle rounded-0"
+                  className="form-control dropdown-toggle"
                   placeholder="Cari produk atau toko ..."
                   aria-label="Search"
                   data-bs-toggle="dropdown"
@@ -118,7 +118,7 @@ export default function Navbar() {
                   }}
                 />
                 {/* Filter */}
-                <li className="nav-item dropdown dropdown-filter input-group-text p-0">
+                {/* <li className="nav-item dropdown dropdown-filter input-group-text p-0">
                   <a
                     className="nav-link dropdown-toggle p-0"
                     href="#"
@@ -159,7 +159,7 @@ export default function Navbar() {
                       Cari
                     </button>
                   </div>
-                </li>
+                </li> */}
               </div>
             </form>
           </ul>

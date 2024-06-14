@@ -1,10 +1,7 @@
 import { Link } from 'react-router-dom';
 import './style.scss';
-import { useParams } from 'react-router-dom';
 
 export default function Layout() {
-  let { isSignup } = useParams();
-
   return (
     <div className="signup">
       <div className="container-fluid">
@@ -16,66 +13,73 @@ export default function Layout() {
               </h2>
             </div>
             <div className="card-body px-0">
-              {isSignup == 'true' ? (
+              <h5 className="text-center mb-3">
+                <b>Signup</b>
+              </h5>
+              <div className="mb-3">
                 <div className="mb-3">
-                  <div className="mb-3">
-                    <label className="form-label">Nama</label>
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Masukkan Nama"
-                    />
-                  </div>
-                  <div className="mb-3">
-                    <label className="form-label">Angkatan</label>
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Masukkan Angkatan"
-                    />
-                  </div>
-                  <div className="mb-3">
-                    <label className="form-label">Fakultas</label>
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Masukkan Fakultas"
-                    />
-                  </div>
-                  <div className="mb-3">
-                    <label className="form-label">Jurusan</label>
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Masukkan Jurusan"
-                    />
-                  </div>
-                  <div className="mb-3">
-                    <label className="form-label">Program Studi</label>
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Masukkan Program Studi"
-                    />
-                  </div>
-                  <div className="d-flex justify-content-center">
-                    <Link to="/dashboard" className="btn btn-theme">
-                      Continue
-                    </Link>
-                  </div>
+                  <label className="form-label">Nama</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Masukkan Nama"
+                  />
                 </div>
-              ) : (
-                <div className="mb-3 d-flex justify-content-center">
-                  <Link to="/signup/true" className="btn btn-outline-theme-2">
-                    <img
-                      className="google-logo"
-                      src="/images/google-logo.png"
-                      alt="Google Logo"
-                    />{' '}
-                    Signup with Google
+                <div className="mb-3">
+                  <label className="form-label">Angkatan</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Masukkan Angkatan"
+                  />
+                </div>
+                <div className="mb-3">
+                  <label className="form-label">Fakultas</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Masukkan Fakultas"
+                  />
+                </div>
+                <div className="mb-3">
+                  <label className="form-label">Jurusan</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Masukkan Jurusan"
+                  />
+                </div>
+                <div className="mb-3">
+                  <label className="form-label">Program Studi</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Masukkan Program Studi"
+                  />
+                </div>
+                <hr />
+                <div className="mb-3">
+                  <label className="form-label">Username</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Masukkan Username"
+                  />
+                </div>
+                <div className="mb-3">
+                  <label className="form-label">Password</label>
+                  <input
+                    type="password"
+                    className="form-control"
+                    placeholder="Masukkan Password"
+                  />
+                </div>
+                <div className="d-flex justify-content-center pt-2">
+                  <Link to="/dashboard" className="btn btn-theme">
+                    Signup
                   </Link>
                 </div>
-              )}
+              </div>
             </div>
             <div className="card-footer text-body-secondary bg-white pt-3 text-center">
               All rights reserved. Copyright &copy; {new Date().getFullYear()}

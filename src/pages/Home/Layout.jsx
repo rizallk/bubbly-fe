@@ -1,9 +1,8 @@
 import './style.scss';
-import Carousel from '../../components/Carousel';
+// import Carousel from '../../components/Carousel';
 import CategoryHome from '../../components/Category.Home';
 import Footer from '../../components/Footer';
 import Hero from '../../components/Hero';
-import KewirausahaanHome from '../../components/Kewirausahaan.Home';
 import Navbar from '../../components/Navbar';
 import RecentProductHome from '../../components/RecentProduct.Home';
 import TopProductHome from '../../components/TopProduct.Home';
@@ -139,7 +138,7 @@ export default function Layout() {
       <Hero />
       <div id="home" className="container-fluid mt-5">
         {/* <SearchFilterHome /> */}
-        <Carousel />
+        {/* <Carousel /> */}
         <RecentProductHome />
         <img className="design-bubble-1" src="/images/design-bubble-left.png" />
         <TopProductHome />
@@ -216,28 +215,29 @@ export default function Layout() {
             <h4 className="fw-semibold mb-3">
               Beberapa yang paling banyak Disukai
             </h4>
-            <div className="shop border rounded p-3 ">
+            <div className="shop border rounded p-3 bg-white">
               {toko.map((v, i) => {
-                return (
-                  <ShopCard
-                    key={i}
-                    title={v.nama}
-                    desc={v.desc}
-                    owner="Nama Pemilik"
-                    address={v.alamat}
-                    slug={v.slug}
-                    image={v.gambar}
-                    isHome={true}
-                  />
-                );
+                if (i < 5) {
+                  return (
+                    <ShopCard
+                      key={i}
+                      title={v.nama}
+                      desc={v.desc}
+                      owner="Nama Pemilik"
+                      address={v.alamat}
+                      slug={v.slug}
+                      image={v.gambar}
+                      isHome={true}
+                    />
+                  );
+                }
               })}
-              <a href="#" className="btn btn-theme w-100">
+              <Link to="/shops" className="btn btn-theme w-100">
                 Toko Lainnya
-              </a>
+              </Link>
             </div>
           </div>
         </div>
-        <KewirausahaanHome />
       </div>
       <Footer />
     </div>

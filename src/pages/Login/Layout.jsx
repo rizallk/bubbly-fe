@@ -13,7 +13,10 @@ export default function Layout() {
               </h2>
             </div>
             <div className="card-body px-0">
-              {/* <div className="mb-3">
+              <h5 className="text-center mb-3">
+                <b>Login</b>
+              </h5>
+              <div className="mb-3">
                 <label htmlFor="username" className="form-label">
                   Username
                 </label>
@@ -35,12 +38,12 @@ export default function Layout() {
                   placeholder="Masukkan Password"
                 />
               </div>
-              <div className="d-flex justify-content-center">
+              <div className="d-flex justify-content-center pt-2">
                 <a href="dashboard.html" className="btn btn-theme">
                   Masuk
                 </a>
-              </div> */}
-              <div className="mb-3 d-flex justify-content-center flex-wrap">
+              </div>
+              {/* <div className="mb-3 d-flex justify-content-center flex-wrap">
                 <div className="mb-3">
                   <Link to="/dashboard" className="btn btn-theme">
                     <i className="bi bi-envelope me-2"></i>
@@ -55,9 +58,11 @@ export default function Layout() {
                   />{' '}
                   Login with Google
                 </Link>
-              </div>
+              </div> */}
               <p className="text-center pt-4 m-0">
-                Belum punya Akun? <Link to="/signup">Daftar</Link>
+                <small>
+                  Belum punya Akun? <Link to="/signup">Daftar</Link>
+                </small>
               </p>
             </div>
             <div className="card-footer text-body-secondary bg-white pt-3 text-center">
